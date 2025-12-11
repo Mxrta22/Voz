@@ -67,6 +67,7 @@ També pots canviar entre mode clar i fosc manualment utilitzant el botó "Toggl
 L'aplicació utilitza un sistema d'auto-importació de components que permet utilitzar els components de Vue sense necessitat d'importar-los explícitament. Els components es troben a la carpeta `src/components/` i es registren automàticament. 
 
 El component principal de funcionalitat és `VoiceCommander.vue`, que gestiona tota la lògica de reconeixement de veu i interacció amb l'usuari. 
+
 ## Notes
 
 Aquest README està basat en el projecte Voz, una aplicació de control per veu desenvolupada com a part d'activitats educatives. El projecte utilitza tecnologies modernes de desenvolupament web com Vue 3, Vuetify i Vite per oferir una experiència d'usuari fluida i responsiva.
