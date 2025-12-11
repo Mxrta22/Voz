@@ -1,117 +1,73 @@
+# Voz - Aplicació de Control per Veu
 
-
-# 🗣️ Voz - Aplicació de Control per Veu
-
-Una **aplicació web interactiva** desenvolupada amb **Vue 3** que permet controlar la interfície mitjançant **comandaments de veu**. Aprofita la tecnologia nativa de reconeixement de veu del navegador per oferir una experiència d'usuari accessible i moderna.
-
------
-
-## 🌟 Característiques Principals
-
-  * **Control per Veu:** Interactua amb l'aplicació parlant.
-  * **Reconeixement Nativa:** Utilitza l'API de reconeixement de veu del navegador (requereix compatibilitat).
-  * **Temes Dinàmics:** Canvia entre modes fosc i clar mitjançant la veu.
-  * **Desenvolupament Modern:** Construït amb Vue 3, Vuetify i Vite per a una experiència ràpida i fluida.
-
------
+Una aplicació web desenvolupada amb Vue 3 que permet controlar la interfície mitjançant comandaments de veu. Utilitza tecnologia de reconeixement de veu del navegador per oferir una experiència d'usuari interactiva i accessible. [1](#0-0) 
 
 ## 🛠️ Tecnologies Utilitzades
 
-Aquest projecte ha estat construït utilitzant un conjunt d'eines i *frameworks* moderns:
+- **Vue 3** - Framework JavaScript per a la construcció d'interfícies d'usuari [2](#0-1) 
+- **Vuetify** - Biblioteca de components UI per a Vue 3 [3](#0-2) 
+- **Vue Router** - Sistema d'enrutament oficial per a Vue [4](#0-3) 
+- **Vite** - Eina de construcció ràpida per a projectes web moderns [5](#0-4) 
+- **unplugin-vue-components** - Sistema d'auto-importació de components [6](#0-5) 
 
-| Tecnologia | Descripció |
-| :--- | :--- |
-| **Vue 3** | 🧩 Framework JavaScript progressiu per a la construcció d'interfícies d'usuari. |
-| **Vuetify** | 🎨 Biblioteca de components UI amb Material Design per a Vue 3. |
-| **Vue Router** | 🧭 Sistema d'enrutament oficial per a aplicacions Vue. |
-| **Vite** | ⚡ Eina de construcció ràpida per a un desenvolupament web modern. |
-| **unplugin-vue-components** | 📦 Sistema d'auto-importació de components per a una millor experiència de desenvolupament. |
+## 📦 Instal·lació
 
------
+1. Clona el repositori:
+   ```bash
+   git clone https://github.com/Mxrta22/Voz.git
+   cd Voz
+   ```
 
-## 📦 Instal·lació i Configuració
+2. Instal·la les dependències:
+   ```bash
+   npm install
+   ```
 
-Segueix aquests passos per tenir una còpia del projecte en funcionament localment.
+## 🚀 Execució
 
-### 1\. Clonar el Repositori
-
-```bash
-git clone https://github.com/Mxrta22/Voz.git
-cd Voz
-```
-
-### 2\. Instal·lar Dependències
-
-Utilitza `npm` per instal·lar totes les dependències necessàries:
-
-```bash
-npm install
-```
-
------
-
-## 🚀 Execució de l'Aplicació
-
-### Mode Desenvolupament
-
-Per iniciar l'aplicació amb recàrrega en calent (*Hot Reload*) i accés a les eines de desenvolupament:
+Per iniciar l'aplicació en mode desenvolupament:
 
 ```bash
 npm run dev
 ```
 
-> L'aplicació s'iniciarà automàticament al teu navegador per defecte (normalment a `http://localhost:5173/`).
+L'aplicació s'iniciarà automàticament al teu navegador per defecte. [7](#0-6) 
 
-### Mode Producció (Build)
-
-Per construir la versió optimitzada i minificada per a desplegament:
+Per construir la versió de producció:
 
 ```bash
 npm run build
 ```
 
------
+## 📖 Ús Bàsic
 
-## 📖 Ús Bàsic (Control per Veu)
-
-L'aplicació es centra en la interacció a través de la veu.
-
-### Pas a Pas
-
-1.  **Activa el Micròfon:** Fes clic al botó **"Escolta"** a la interfície.
-2.  **Estat Actiu:** El micròfon es posarà de color **vermell** i mostrarà el text **"Escoltant..."**.
-3.  **Pronuncia el Comandament:** Digues una de les frases de la llista següent.
-4.  **Acció Executada:** L'aplicació processarà la teva veu i executarà l'acció corresponent.
+L'aplicació ofereix control per veu amb les següents funcionalitats principals:
 
 ### Comandaments de Veu Disponibles
 
-| Comandament | Acció |
-| :--- | :--- |
-| **"Saluda"** | Mostra un missatge de benvinguda a l'usuari. |
-| **"Ajuda"** | Mostra informació d'ajuda sobre l'ús. |
-| **"Esborra"** / **"Borrar"** / **"Neteja"** | Reinicia l'estat actual de l'aplicació. |
-| **"Mode fosc"** | 🌙 Activa el tema fosc de la interfície. |
-| **"Mode clar"** | ☀️ Activa el tema clar de la interfície. |
+- **"Saluda"** - Mostra un missatge de benvinguda
+- **"Ajuda"** - Mostra informació d'ajuda
+- **"Esborra"/"Borrar"/"Neteja"** - Reinicia l'estat de l'aplicació
+- **"Mode fosc"** - Activa el tema fosc de la interfície
+- **"Mode clar"** - Activa el tema clar de la interfície
 
-### 🖱️ Control Manual
+### Com Utilitzar
 
-Si el reconeixement de veu no està disponible o es vol un control tradicional, pots canviar manualment entre els temes clar i fosc utilitzant el botó **"Toggle Light / Dark Manual"** situat a la part inferior de la interfície.
+1. Fes clic al botó "Escolta" per activar el reconeixement de veu [8](#0-7) 
+2. El micròfon es posarà vermell i mostrarà "Escoltant..." [9](#0-8) 
+3. Pronuncia un dels comandaments disponibles
+4. L'aplicació processarà la teva veu i executarà l'acció corresponent [10](#0-9) 
 
------
+### Control Manual
+
+També pots canviar entre mode clar i fosc manualment utilitzant el botó "Toggle Light / Dark Manual" situat a la part inferior de la interfície. [11](#0-10) 
 
 ## 🏗️ Estructura del Projecte
 
-L'aplicació utilitza el sistema d'**auto-importació de components** (`unplugin-vue-components`).
+L'aplicació utilitza un sistema d'auto-importació de components que permet utilitzar els components de Vue sense necessitat d'importar-los explícitament. [12](#0-11)  Els components es troben a la carpeta `src/components/` i es registren automàticament. [13](#0-12) 
 
-  * Els components de Vue es troben a la carpeta `src/components/`.
-  * No cal fer imports explícits, ja que es registren automàticament.
+El component principal de funcionalitat és `VoiceCommander.vue`, que gestiona tota la lògica de reconeixement de veu i interacció amb l'usuari. [14](#0-13) 
 
-El component clau de la funcionalitat és:
+## Notes
 
-  * **`VoiceCommander.vue`**: Conté la lògica principal per a la inicialització de l'API de reconeixement de veu, la gestió de les comandes i la interacció amb l'estat de l'aplicació.
-
------
-
-## 📝 Notes del Desenvolupament
-
-Aquest projecte (**Voz**) es va desenvolupar com a part d'activitats educatives per explorar les capacitats del **Reconeixement de Veu Web** en un entorn modern de Vue 3, utilitzant eines d'avantguarda com Vite per a la construcció.
+Aquest README està basat en el projecte Voz, una aplicació de control per veu desenvolupada com a part d'activitats educatives. El projecte utilitza tecnologies modernes de desenvolupament web com Vue 3, Vuetify i Vite per oferir una experiència d'usuari fluida i responsiva.
